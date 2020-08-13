@@ -16,55 +16,71 @@
     "description": "Documentation only changes. "
   },
   "Remove": {
-    "emoji": "\uD83D\uDD25",
+    "emoji": "🔥",
     "description": "Remove code and files. "
   },
   "Style": {
-    "emoji": "\uD83D\uDC84",
+    "emoji": "💄",
     "description": "Changes that do not affect the meaning of the code. "
   },
   "Hotfix": {
-    "emoji": "\uD83D\uDE91",
+    "emoji": "🚑",
     "description": "Critical hotfix. "
   },
   "Breaking" : {
-    "emoji": "\uD83D\uDCA5",
+    "emoji": "💥",
     "description": "Introduce breaking changes. "
   },
   "Comments": {
-    "emoji": "\uD83D\uDCA1",
+    "emoji": "💡",
     "description": "Add or update comments in source code. "
   },
   "Refactor": {
     "emoji": "🔨",
     "description": "A code change that neither fixes a bug nor adds a feature. "
   },
+  "Moving": {
+    "emoji": "🚚",
+    "description": "Move or rename files. "
+  },
+  "Packaging": {
+    "emoji": "📦",
+    "description": "Add or update compiled files or packages. "
+  },
   "Bad Code" : {
-    "emoji": "\uD83D\uDCA9",
+    "emoji": "💩",
     "description": "Write bad code that needs to be improved. "
   },
+  "Catching" : {
+    "emoji": "🥅",
+    "description": "Catching errors. "
+  },
+  "Experiment" : {
+    "emoji": "⚗",
+    "description": "Experiment new things."
+  },
   "Deploy": {
-    "emoji": "\uD83D\uDE80",
+    "emoji": "🚀",
     "description": "Deploy stuff. "
   },
   "Logs": {
-    "emoji": "\uD83D\uDD0A",
+    "emoji": "🔊",
     "description": "Add or update logs. "
   },
   "Assets": {
-    "emoji": "\uD83C\uDF71",
+    "emoji": "🍱",
     "description": "Add or update assets. "
   },
   "Database": {
-    "emoji": "\uD83D\uDDC3",
+    "emoji": "🗃",
     "description": "Perform database related changes. "
   },
   "Deprecating": {
-    "emoji": "\uD83D\uDDD1",
+    "emoji": "🗑",
     "description": "Deprecating code that needs to be cleaned up."
   },
   "Progress": {
-    "emoji": "\uD83D\uDEA7",
+    "emoji": "🚧",
     "description": "Work in progress. "
   },
   "Test": {
@@ -72,7 +88,7 @@
     "description": "Adding missing tests or correcting existing tests. "
   },
   "Security": {
-    "emoji": "\uD83D\uDD12",
+    "emoji": "🔒",
     "description": "Fix security issues. "
   },
   "Add Dependency": {
@@ -80,7 +96,7 @@
     "description": "Adding a dependency. "
   },
   "Pushpin": {
-    "emoji": "\uD83D\uDCCC",
+    "emoji": "📌",
     "description": "Pinning dependencies to specific versions. "
   },
   "Upgrading": {
@@ -92,15 +108,15 @@
     "description": "Downgrading dependencies. "
   },
   "Tags": {
-    "emoji": "\uD83D\uDD16",
+    "emoji": "🔖",
     "description": "Releasing / Version tags. "
   },
   "Gitignore" : {
-    "emoji": "\uD83D\uDE48",
+    "emoji": "🙈",
     "description": "Add or update a .gitignore file. "
   },
   "Begining": {
-    "emoji": "\uD83C\uDF89",
+    "emoji": "🎉",
     "description": "Begining a project. "
   }
 }
