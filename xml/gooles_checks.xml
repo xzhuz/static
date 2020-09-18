@@ -253,6 +253,10 @@
       <property name="lineWrappingIndentation" value="8"/>
       <property name="arrayInitIndent" value="4"/>
     </module>
+	<!-- JavaDoc 注释的缩进 -->
+	<module name="JavadocTagContinuationIndentation">
+	  <property name="offset" value="0"/>
+	</module>
     <module name="AbbreviationAsWordInName">
       <property name="ignoreFinal" value="false"/>
       <property name="allowedAbbreviationLength" value="0"/>
