@@ -27,6 +27,10 @@
     "emoji": "🚑",
     "description": "Critical hotfix. "
   },
+  "Refactor": {
+    "emoji": "🔨",
+    "description": "A code change that neither fixes a bug nor adds a feature. "
+  },
   "Breaking" : {
     "emoji": "💥",
     "description": "Introduce breaking changes. "
@@ -34,10 +38,6 @@
   "Comments": {
     "emoji": "💡",
     "description": "Add or update comments in source code. "
-  },
-  "Refactor": {
-    "emoji": "🔨",
-    "description": "A code change that neither fixes a bug nor adds a feature. "
   },
   "Moving": {
     "emoji": "🚚",
@@ -55,10 +55,6 @@
     "emoji": "🥅",
     "description": "Catching errors. "
   },
-  "Experiment" : {
-    "emoji": "⚗",
-    "description": "Experiment new things."
-  },
   "Deploy": {
     "emoji": "🚀",
     "description": "Deploy stuff. "
@@ -74,6 +70,10 @@
   "Database": {
     "emoji": "🗃",
     "description": "Perform database related changes. "
+  },
+  "Experiment" : {
+    "emoji": "⚗",
+    "description": "Experiment new things."
   },
   "Deprecating": {
     "emoji": "🗑",
@@ -93,7 +93,11 @@
   },
   "Add Dependency": {
     "emoji": "➕",
-    "description": "Adding a dependency. "
+    "description": "Add a dependency. "
+  },
+  "Remove Dependency": {
+    "emoji": "➖",
+    "description": "Remove a dependency. "
   },
   "Pushpin": {
     "emoji": "📌",
