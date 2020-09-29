@@ -1,10 +1,10 @@
-'use strict';
-const TABLE_NAME = 'hljs-ln',
-  LINE_NAME = 'hljs-ln-line',
-  CODE_BLOCK_NAME = 'hljs-ln-code',
-  NUMBERS_BLOCK_NAME = 'hljs-ln-numbers',
-  NUMBER_LINE_NAME = 'hljs-ln-n',
-  DATA_ATTR_NAME = 'data-line-number',
+"use strict";
+const TABLE_NAME = "hljs-ln",
+  LINE_NAME = "hljs-ln-line",
+  CODE_BLOCK_NAME = "hljs-ln-code",
+  NUMBERS_BLOCK_NAME = "hljs-ln-numbers",
+  NUMBER_LINE_NAME = "hljs-ln-n",
+  DATA_ATTR_NAME = "data-line-number",
   BREAK_LINE_REGEXP = /\r\n|\r|\n/g;
 
 function lineNumbersInternal(element, options) {
@@ -40,7 +40,7 @@ function getStartFromOption(element, options) {
   }
 
   // can be overridden because local option is priority
-  var value = getAttribute(element, 'data-ln-start-from');
+  var value = getAttribute(element, "data-ln-start-from");
   if (value !== null) {
     startFrom = toNumber(value, defaultValue);
   }
@@ -103,23 +103,23 @@ function addLineNumbersBlockFor(inputHtml, options) {
   var lines = getLines(inputHtml);
 
   // if last line contains only carriage return remove it
-  if (lines[lines.length - 1].trim() === '') {
+  if (lines[lines.length - 1].trim() === "") {
     lines.pop();
   }
 
-  if (lines.length > 0 || options.singleLine) {
-    var html = '';
+  if (lines.length > 1 || options.singleLine) {
+    var html = "";
 
     for (var i = 0, l = lines.length; i < l; i++) {
       html += format(
-        '<tr>' +
+        "<tr>" +
           '<td class="{0} {1}" {3}="{5}">' +
           '<div class="{2}" {3}="{5}"></div>' +
-          '</td>' +
+          "</td>" +
           '<td class="{0} {4}" {3}="{5}">' +
-          '{6}' +
-          '</td>' +
-          '</tr>',
+          "{6}" +
+          "</td>" +
+          "</tr>",
         [
           LINE_NAME,
           NUMBERS_BLOCK_NAME,
@@ -127,7 +127,7 @@ function addLineNumbersBlockFor(inputHtml, options) {
           DATA_ATTR_NAME,
           CODE_BLOCK_NAME,
           i + options.startFrom,
-          lines[i].length > 0 ? lines[i] : ' ',
+          lines[i].length > 0 ? lines[i] : " ",
         ]
       );
     }
@@ -145,16 +145,16 @@ function duplicateMultilineNode(element) {
 
   var lines = getLines(element.innerHTML);
 
-  for (var i = 0, result = ''; i < lines.length; i++) {
-    var lineText = lines[i].length > 0 ? lines[i] : ' ';
+  for (var i = 0, result = ""; i < lines.length; i++) {
+    var lineText = lines[i].length > 0 ? lines[i] : " ";
     result += format('<span class="{0}">{1}</span>\n', [className, lineText]);
   }
 
   element.innerHTML = result.trim();
 }
 
-export function lineNumbersBlock(element, options) {
-  if (typeof element !== 'object') return;
+function lineNumbersBlock(element, options) {
+  if (typeof element !== "object") return;
 
   element.innerHTML = lineNumbersInternal(element, options);
 }
